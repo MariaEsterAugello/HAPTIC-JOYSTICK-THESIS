@@ -1,0 +1,787 @@
+  ICDILight.Form1.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly ICDILight, Version=1.3.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Peak.Can.Light.PCAN_DNG: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 HW_DONGLE_SJA IsConst : Public, Static, HasDefault
+    Int32 HW_DONGLE_SJA_EPP IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_EX IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_ST IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_STANDARD_ID IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_EXTENDED_ID IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STANDARD IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_RTR IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_EXTENDED IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STATUS IsConst : Public, Static, HasDefault
+    Int32 BAUD_1M IsConst : Public, Static, HasDefault
+    Int32 BAUD_500K IsConst : Public, Static, HasDefault
+    Int32 BAUD_250K IsConst : Public, Static, HasDefault
+    Int32 BAUD_125K IsConst : Public, Static, HasDefault
+    Int32 BAUD_100K IsConst : Public, Static, HasDefault
+    Int32 BAUD_50K IsConst : Public, Static, HasDefault
+    Int32 BAUD_20K IsConst : Public, Static, HasDefault
+    Int32 BAUD_10K IsConst : Public, Static, HasDefault
+    Int32 BAUD_5K IsConst : Public, Static, HasDefault
+    Int32 ERR_OK IsConst : Public, Static, HasDefault
+    Int32 ERR_XMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_OVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSLIGHT IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSHEAVY IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSOFF IsConst : Public, Static, HasDefault
+    Int32 ERR_ANYBUSERR IsConst : Public, Static
+    Int32 ERR_QRCVEMPTY IsConst : Public, Static, HasDefault
+    Int32 ERR_QOVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_QXMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_REGTEST IsConst : Public, Static, HasDefault
+    Int32 ERR_NODRIVER IsConst : Public, Static, HasDefault
+    Int32 ERR_HWINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_NETINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHW IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLNET IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLCLIENT IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHANDLE IsConst : Public, Static
+    Int32 ERR_RESOURCE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMTYPE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMVAL IsConst : Public, Static, HasDefault
+    Int32 ERR_UNKNOWN IsConst : Public, Static, HasDefault
+  Methods:
+    Init(UInt16, Int32, Int32, UInt32, UInt16): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Close(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Status(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Write(TPCANMsg IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(TPCANMsg(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadEx(TPCANMsg(Out) IsImplicitlyDereferenced, TPCANTimestamp(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    VersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DLLVersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SpecialFunktion(UInt32, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetClient(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MsgFilter(UInt32, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetFilter(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetRcvEvent(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Peak.Can.Light.PCAN_DNG+TPCANMsg: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Byte MSGTYPE : Public
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Peak.Can.Light.PCAN_DNG+TPCANTimestamp: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Class Peak.Can.Light.PCAN_DNP: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 HW_DONGLE_PRO IsConst : Public, Static, HasDefault
+    Int32 HW_DONGLE_PRO_EPP IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_EX IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_ST IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_STANDARD_ID IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_EXTENDED_ID IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STANDARD IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_RTR IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_EXTENDED IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STATUS IsConst : Public, Static, HasDefault
+    Int32 BAUD_1M IsConst : Public, Static, HasDefault
+    Int32 BAUD_500K IsConst : Public, Static, HasDefault
+    Int32 BAUD_250K IsConst : Public, Static, HasDefault
+    Int32 BAUD_125K IsConst : Public, Static, HasDefault
+    Int32 BAUD_100K IsConst : Public, Static, HasDefault
+    Int32 BAUD_50K IsConst : Public, Static, HasDefault
+    Int32 BAUD_20K IsConst : Public, Static, HasDefault
+    Int32 BAUD_10K IsConst : Public, Static, HasDefault
+    Int32 BAUD_5K IsConst : Public, Static, HasDefault
+    Int32 ERR_OK IsConst : Public, Static, HasDefault
+    Int32 ERR_XMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_OVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSLIGHT IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSHEAVY IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSOFF IsConst : Public, Static, HasDefault
+    Int32 ERR_ANYBUSERR IsConst : Public, Static
+    Int32 ERR_QRCVEMPTY IsConst : Public, Static, HasDefault
+    Int32 ERR_QOVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_QXMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_REGTEST IsConst : Public, Static, HasDefault
+    Int32 ERR_NODRIVER IsConst : Public, Static, HasDefault
+    Int32 ERR_HWINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_NETINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHW IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLNET IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLCLIENT IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHANDLE IsConst : Public, Static
+    Int32 ERR_RESOURCE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMTYPE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMVAL IsConst : Public, Static, HasDefault
+    Int32 ERR_UNKNOWN IsConst : Public, Static, HasDefault
+  Methods:
+    Init(UInt16, Int32, Int32, UInt32, UInt16): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Close(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Status(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Write(TPCANMsg IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(TPCANMsg(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadEx(TPCANMsg(Out) IsImplicitlyDereferenced, TPCANTimestamp(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    VersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DLLVersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetClient(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MsgFilter(UInt32, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetFilter(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetRcvEvent(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Peak.Can.Light.PCAN_DNP+TPCANMsg: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Byte MSGTYPE : Public
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Peak.Can.Light.PCAN_DNP+TPCANTimestamp: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Class Peak.Can.Light.PCAN_ISA: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 HW_ISA IsConst : Public, Static, HasDefault
+    Int32 HW_ISA_SJA IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_EX IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_ST IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_STANDARD_ID IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_EXTENDED_ID IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STANDARD IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_RTR IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_EXTENDED IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STATUS IsConst : Public, Static, HasDefault
+    Int32 BAUD_1M IsConst : Public, Static, HasDefault
+    Int32 BAUD_500K IsConst : Public, Static, HasDefault
+    Int32 BAUD_250K IsConst : Public, Static, HasDefault
+    Int32 BAUD_125K IsConst : Public, Static, HasDefault
+    Int32 BAUD_100K IsConst : Public, Static, HasDefault
+    Int32 BAUD_50K IsConst : Public, Static, HasDefault
+    Int32 BAUD_20K IsConst : Public, Static, HasDefault
+    Int32 BAUD_10K IsConst : Public, Static, HasDefault
+    Int32 BAUD_5K IsConst : Public, Static, HasDefault
+    Int32 ERR_OK IsConst : Public, Static, HasDefault
+    Int32 ERR_XMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_OVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSLIGHT IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSHEAVY IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSOFF IsConst : Public, Static, HasDefault
+    Int32 ERR_ANYBUSERR IsConst : Public, Static
+    Int32 ERR_QRCVEMPTY IsConst : Public, Static, HasDefault
+    Int32 ERR_QOVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_QXMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_REGTEST IsConst : Public, Static, HasDefault
+    Int32 ERR_NODRIVER IsConst : Public, Static, HasDefault
+    Int32 ERR_HWINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_NETINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHW IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLNET IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLCLIENT IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHANDLE IsConst : Public, Static
+    Int32 ERR_RESOURCE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMTYPE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMVAL IsConst : Public, Static, HasDefault
+    Int32 ERR_UNKNOWN IsConst : Public, Static, HasDefault
+  Methods:
+    Init(UInt16, Int32, Int32, UInt32, UInt16): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Close(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Status(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Write(TPCANMsg IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(TPCANMsg(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadEx(TPCANMsg(Out) IsImplicitlyDereferenced, TPCANTimestamp(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    VersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DLLVersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetClient(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MsgFilter(UInt32, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetFilter(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetRcvEvent(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Peak.Can.Light.PCAN_ISA+TPCANMsg: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Byte MSGTYPE : Public
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Peak.Can.Light.PCAN_ISA+TPCANTimestamp: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Class Peak.Can.Light.PCAN_2ISA: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 CAN_INIT_TYPE_EX IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_ST IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_STANDARD_ID IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_EXTENDED_ID IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STANDARD IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_RTR IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_EXTENDED IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STATUS IsConst : Public, Static, HasDefault
+    Int32 BAUD_1M IsConst : Public, Static, HasDefault
+    Int32 BAUD_500K IsConst : Public, Static, HasDefault
+    Int32 BAUD_250K IsConst : Public, Static, HasDefault
+    Int32 BAUD_125K IsConst : Public, Static, HasDefault
+    Int32 BAUD_100K IsConst : Public, Static, HasDefault
+    Int32 BAUD_50K IsConst : Public, Static, HasDefault
+    Int32 BAUD_20K IsConst : Public, Static, HasDefault
+    Int32 BAUD_10K IsConst : Public, Static, HasDefault
+    Int32 BAUD_5K IsConst : Public, Static, HasDefault
+    Int32 ERR_OK IsConst : Public, Static, HasDefault
+    Int32 ERR_XMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_OVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSLIGHT IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSHEAVY IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSOFF IsConst : Public, Static, HasDefault
+    Int32 ERR_ANYBUSERR IsConst : Public, Static
+    Int32 ERR_QRCVEMPTY IsConst : Public, Static, HasDefault
+    Int32 ERR_QOVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_QXMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_REGTEST IsConst : Public, Static, HasDefault
+    Int32 ERR_NODRIVER IsConst : Public, Static, HasDefault
+    Int32 ERR_HWINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_NETINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHW IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLNET IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLCLIENT IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHANDLE IsConst : Public, Static
+    Int32 ERR_RESOURCE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMTYPE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMVAL IsConst : Public, Static, HasDefault
+    Int32 ERR_UNKNOWN IsConst : Public, Static, HasDefault
+  Methods:
+    Init(UInt16, Int32, Int32, UInt32, UInt16): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Close(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Status(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Write(TPCANMsg IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(TPCANMsg(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadEx(TPCANMsg(Out) IsImplicitlyDereferenced, TPCANTimestamp(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    VersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DLLVersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetClient(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MsgFilter(UInt32, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetFilter(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetRcvEvent(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Peak.Can.Light.PCAN_2ISA+TPCANMsg: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Byte MSGTYPE : Public
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Peak.Can.Light.PCAN_2ISA+TPCANTimestamp: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Class Peak.Can.Light.PCAN_USB: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 CAN_INIT_TYPE_EX IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_ST IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_STANDARD_ID IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_EXTENDED_ID IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STANDARD IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_RTR IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_EXTENDED IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STATUS IsConst : Public, Static, HasDefault
+    Int32 BAUD_1M IsConst : Public, Static, HasDefault
+    Int32 BAUD_500K IsConst : Public, Static, HasDefault
+    Int32 BAUD_250K IsConst : Public, Static, HasDefault
+    Int32 BAUD_125K IsConst : Public, Static, HasDefault
+    Int32 BAUD_100K IsConst : Public, Static, HasDefault
+    Int32 BAUD_50K IsConst : Public, Static, HasDefault
+    Int32 BAUD_20K IsConst : Public, Static, HasDefault
+    Int32 BAUD_10K IsConst : Public, Static, HasDefault
+    Int32 BAUD_5K IsConst : Public, Static, HasDefault
+    Int32 ERR_OK IsConst : Public, Static, HasDefault
+    Int32 ERR_XMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_OVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSLIGHT IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSHEAVY IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSOFF IsConst : Public, Static, HasDefault
+    Int32 ERR_ANYBUSERR IsConst : Public, Static
+    Int32 ERR_QRCVEMPTY IsConst : Public, Static, HasDefault
+    Int32 ERR_QOVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_QXMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_REGTEST IsConst : Public, Static, HasDefault
+    Int32 ERR_NODRIVER IsConst : Public, Static, HasDefault
+    Int32 ERR_HWINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_NETINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHW IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLNET IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLCLIENT IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHANDLE IsConst : Public, Static
+    Int32 ERR_RESOURCE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMTYPE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMVAL IsConst : Public, Static, HasDefault
+    Int32 ERR_UNKNOWN IsConst : Public, Static, HasDefault
+  Methods:
+    Init(UInt16, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Close(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Status(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Write(TPCANMsg IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(TPCANMsg(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadEx(TPCANMsg(Out) IsImplicitlyDereferenced, TPCANTimestamp(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    VersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DLLVersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SpecialFunktion(UInt32, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetClient(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MsgFilter(UInt32, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetFilter(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetUSBDeviceNr(UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetUSBDeviceNr(UInt32&): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetRcvEvent(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Peak.Can.Light.PCAN_USB+TPCANMsg: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Byte MSGTYPE : Public
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Peak.Can.Light.PCAN_USB+TPCANTimestamp: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Class Peak.Can.Light.PCAN_2USB: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 CAN_INIT_TYPE_EX IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_ST IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_STANDARD_ID IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_EXTENDED_ID IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STANDARD IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_RTR IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_EXTENDED IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STATUS IsConst : Public, Static, HasDefault
+    Int32 BAUD_1M IsConst : Public, Static, HasDefault
+    Int32 BAUD_500K IsConst : Public, Static, HasDefault
+    Int32 BAUD_250K IsConst : Public, Static, HasDefault
+    Int32 BAUD_125K IsConst : Public, Static, HasDefault
+    Int32 BAUD_100K IsConst : Public, Static, HasDefault
+    Int32 BAUD_50K IsConst : Public, Static, HasDefault
+    Int32 BAUD_20K IsConst : Public, Static, HasDefault
+    Int32 BAUD_10K IsConst : Public, Static, HasDefault
+    Int32 BAUD_5K IsConst : Public, Static, HasDefault
+    Int32 ERR_OK IsConst : Public, Static, HasDefault
+    Int32 ERR_XMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_OVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSLIGHT IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSHEAVY IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSOFF IsConst : Public, Static, HasDefault
+    Int32 ERR_ANYBUSERR IsConst : Public, Static
+    Int32 ERR_QRCVEMPTY IsConst : Public, Static, HasDefault
+    Int32 ERR_QOVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_QXMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_REGTEST IsConst : Public, Static, HasDefault
+    Int32 ERR_NODRIVER IsConst : Public, Static, HasDefault
+    Int32 ERR_HWINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_NETINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHW IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLNET IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLCLIENT IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHANDLE IsConst : Public, Static
+    Int32 ERR_RESOURCE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMTYPE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMVAL IsConst : Public, Static, HasDefault
+    Int32 ERR_UNKNOWN IsConst : Public, Static, HasDefault
+  Methods:
+    Init(UInt16, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Close(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Status(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Write(TPCANMsg IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(TPCANMsg(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadEx(TPCANMsg(Out) IsImplicitlyDereferenced, TPCANTimestamp(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    VersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DLLVersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SpecialFunktion(UInt32, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetClient(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MsgFilter(UInt32, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetFilter(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetUSBDeviceNr(UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetUSBDeviceNr(UInt32&): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetRcvEvent(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Peak.Can.Light.PCAN_2USB+TPCANMsg: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Byte MSGTYPE : Public
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Peak.Can.Light.PCAN_2USB+TPCANTimestamp: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Class Peak.Can.Light.PCAN_PCI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 CAN_INIT_TYPE_EX IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_ST IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_STANDARD_ID IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_EXTENDED_ID IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STANDARD IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_RTR IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_EXTENDED IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STATUS IsConst : Public, Static, HasDefault
+    Int32 BAUD_1M IsConst : Public, Static, HasDefault
+    Int32 BAUD_500K IsConst : Public, Static, HasDefault
+    Int32 BAUD_250K IsConst : Public, Static, HasDefault
+    Int32 BAUD_125K IsConst : Public, Static, HasDefault
+    Int32 BAUD_100K IsConst : Public, Static, HasDefault
+    Int32 BAUD_50K IsConst : Public, Static, HasDefault
+    Int32 BAUD_20K IsConst : Public, Static, HasDefault
+    Int32 BAUD_10K IsConst : Public, Static, HasDefault
+    Int32 BAUD_5K IsConst : Public, Static, HasDefault
+    Int32 ERR_OK IsConst : Public, Static, HasDefault
+    Int32 ERR_XMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_OVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSLIGHT IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSHEAVY IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSOFF IsConst : Public, Static, HasDefault
+    Int32 ERR_ANYBUSERR IsConst : Public, Static
+    Int32 ERR_QRCVEMPTY IsConst : Public, Static, HasDefault
+    Int32 ERR_QOVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_QXMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_REGTEST IsConst : Public, Static, HasDefault
+    Int32 ERR_NODRIVER IsConst : Public, Static, HasDefault
+    Int32 ERR_HWINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_NETINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHW IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLNET IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLCLIENT IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHANDLE IsConst : Public, Static
+    Int32 ERR_RESOURCE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMTYPE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMVAL IsConst : Public, Static, HasDefault
+    Int32 ERR_UNKNOWN IsConst : Public, Static, HasDefault
+  Methods:
+    Init(UInt16, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Close(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Status(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Write(TPCANMsg IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(TPCANMsg(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadEx(TPCANMsg(Out) IsImplicitlyDereferenced, TPCANTimestamp(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    VersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DLLVersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SpecialFunktion(UInt32, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetClient(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MsgFilter(UInt32, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetFilter(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetRcvEvent(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Peak.Can.Light.PCAN_PCI+TPCANMsg: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Byte MSGTYPE : Public
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Peak.Can.Light.PCAN_PCI+TPCANTimestamp: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Class Peak.Can.Light.PCAN_2PCI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 CAN_INIT_TYPE_EX IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_ST IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_STANDARD_ID IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_EXTENDED_ID IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STANDARD IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_RTR IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_EXTENDED IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STATUS IsConst : Public, Static, HasDefault
+    Int32 BAUD_1M IsConst : Public, Static, HasDefault
+    Int32 BAUD_500K IsConst : Public, Static, HasDefault
+    Int32 BAUD_250K IsConst : Public, Static, HasDefault
+    Int32 BAUD_125K IsConst : Public, Static, HasDefault
+    Int32 BAUD_100K IsConst : Public, Static, HasDefault
+    Int32 BAUD_50K IsConst : Public, Static, HasDefault
+    Int32 BAUD_20K IsConst : Public, Static, HasDefault
+    Int32 BAUD_10K IsConst : Public, Static, HasDefault
+    Int32 BAUD_5K IsConst : Public, Static, HasDefault
+    Int32 ERR_OK IsConst : Public, Static, HasDefault
+    Int32 ERR_XMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_OVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSLIGHT IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSHEAVY IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSOFF IsConst : Public, Static, HasDefault
+    Int32 ERR_ANYBUSERR IsConst : Public, Static
+    Int32 ERR_QRCVEMPTY IsConst : Public, Static, HasDefault
+    Int32 ERR_QOVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_QXMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_REGTEST IsConst : Public, Static, HasDefault
+    Int32 ERR_NODRIVER IsConst : Public, Static, HasDefault
+    Int32 ERR_HWINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_NETINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHW IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLNET IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLCLIENT IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHANDLE IsConst : Public, Static
+    Int32 ERR_RESOURCE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMTYPE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMVAL IsConst : Public, Static, HasDefault
+    Int32 ERR_UNKNOWN IsConst : Public, Static, HasDefault
+  Methods:
+    Init(UInt16, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Close(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Status(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Write(TPCANMsg IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(TPCANMsg(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadEx(TPCANMsg(Out) IsImplicitlyDereferenced, TPCANTimestamp(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    VersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DLLVersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetClient(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MsgFilter(UInt32, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetFilter(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetRcvEvent(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Peak.Can.Light.PCAN_2PCI+TPCANMsg: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Byte MSGTYPE : Public
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Peak.Can.Light.PCAN_2PCI+TPCANTimestamp: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Class Peak.Can.Light.PCAN_PCC: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 CAN_INIT_TYPE_EX IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_ST IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_STANDARD_ID IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_EXTENDED_ID IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STANDARD IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_RTR IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_EXTENDED IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STATUS IsConst : Public, Static, HasDefault
+    Int32 BAUD_1M IsConst : Public, Static, HasDefault
+    Int32 BAUD_500K IsConst : Public, Static, HasDefault
+    Int32 BAUD_250K IsConst : Public, Static, HasDefault
+    Int32 BAUD_125K IsConst : Public, Static, HasDefault
+    Int32 BAUD_100K IsConst : Public, Static, HasDefault
+    Int32 BAUD_50K IsConst : Public, Static, HasDefault
+    Int32 BAUD_20K IsConst : Public, Static, HasDefault
+    Int32 BAUD_10K IsConst : Public, Static, HasDefault
+    Int32 BAUD_5K IsConst : Public, Static, HasDefault
+    Int32 ERR_OK IsConst : Public, Static, HasDefault
+    Int32 ERR_XMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_OVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSLIGHT IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSHEAVY IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSOFF IsConst : Public, Static, HasDefault
+    Int32 ERR_ANYBUSERR IsConst : Public, Static
+    Int32 ERR_QRCVEMPTY IsConst : Public, Static, HasDefault
+    Int32 ERR_QOVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_QXMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_REGTEST IsConst : Public, Static, HasDefault
+    Int32 ERR_NODRIVER IsConst : Public, Static, HasDefault
+    Int32 ERR_HWINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_NETINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHW IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLNET IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLCLIENT IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHANDLE IsConst : Public, Static
+    Int32 ERR_RESOURCE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMTYPE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMVAL IsConst : Public, Static, HasDefault
+    Int32 ERR_UNKNOWN IsConst : Public, Static, HasDefault
+  Methods:
+    Init(UInt16, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Close(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Status(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Write(TPCANMsg IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(TPCANMsg(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadEx(TPCANMsg(Out) IsImplicitlyDereferenced, TPCANTimestamp(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    VersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DLLVersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SpecialFunktion(UInt32, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetClient(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MsgFilter(UInt32, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetFilter(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetRcvEvent(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Peak.Can.Light.PCAN_PCC+TPCANMsg: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Byte MSGTYPE : Public
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Peak.Can.Light.PCAN_PCC+TPCANTimestamp: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Class Peak.Can.Light.PCAN_2PCC: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 CAN_INIT_TYPE_EX IsConst : Public, Static, HasDefault
+    UInt32 CAN_INIT_TYPE_ST IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_STANDARD_ID IsConst : Public, Static, HasDefault
+    Int32 CAN_MAX_EXTENDED_ID IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STANDARD IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_RTR IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_EXTENDED IsConst : Public, Static, HasDefault
+    Byte MSGTYPE_STATUS IsConst : Public, Static, HasDefault
+    Int32 BAUD_1M IsConst : Public, Static, HasDefault
+    Int32 BAUD_500K IsConst : Public, Static, HasDefault
+    Int32 BAUD_250K IsConst : Public, Static, HasDefault
+    Int32 BAUD_125K IsConst : Public, Static, HasDefault
+    Int32 BAUD_100K IsConst : Public, Static, HasDefault
+    Int32 BAUD_50K IsConst : Public, Static, HasDefault
+    Int32 BAUD_20K IsConst : Public, Static, HasDefault
+    Int32 BAUD_10K IsConst : Public, Static, HasDefault
+    Int32 BAUD_5K IsConst : Public, Static, HasDefault
+    Int32 ERR_OK IsConst : Public, Static, HasDefault
+    Int32 ERR_XMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_OVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSLIGHT IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSHEAVY IsConst : Public, Static, HasDefault
+    Int32 ERR_BUSOFF IsConst : Public, Static, HasDefault
+    Int32 ERR_ANYBUSERR IsConst : Public, Static
+    Int32 ERR_QRCVEMPTY IsConst : Public, Static, HasDefault
+    Int32 ERR_QOVERRUN IsConst : Public, Static, HasDefault
+    Int32 ERR_QXMTFULL IsConst : Public, Static, HasDefault
+    Int32 ERR_REGTEST IsConst : Public, Static, HasDefault
+    Int32 ERR_NODRIVER IsConst : Public, Static, HasDefault
+    Int32 ERR_HWINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_NETINUSE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHW IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLNET IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLCLIENT IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLHANDLE IsConst : Public, Static
+    Int32 ERR_RESOURCE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMTYPE IsConst : Public, Static, HasDefault
+    Int32 ERR_ILLPARAMVAL IsConst : Public, Static, HasDefault
+    Int32 ERR_UNKNOWN IsConst : Public, Static, HasDefault
+  Methods:
+    Init(UInt16, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Close(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Status(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Write(TPCANMsg IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(TPCANMsg(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadEx(TPCANMsg(Out) IsImplicitlyDereferenced, TPCANTimestamp(Out) IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    VersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DLLVersionInfo(StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetClient(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MsgFilter(UInt32, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ResetFilter(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetRcvEvent(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Peak.Can.Light.PCAN_2PCC+TPCANMsg: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Byte MSGTYPE : Public
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Peak.Can.Light.PCAN_2PCC+TPCANTimestamp: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Class Peak.Can.Light.TCLightMsg: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TPCANMsg): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANMsg): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANMsg): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANMsg): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANMsg): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANMsg): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANMsg): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANMsg): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANMsg): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANMsg): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 ID : Public
+    Peak.Can.Light.MsgTypes MsgType : Public
+    Byte Len : Public
+    Byte[] Data : Public
+  Methods:
+    op_Implicit(TCLightMsg): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightMsg): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightMsg): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightMsg): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightMsg): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightMsg): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightMsg): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightMsg): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightMsg): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightMsg): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Peak.Can.Light.TCLightTimestamp: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TPCANTimestamp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANTimestamp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANTimestamp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANTimestamp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANTimestamp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANTimestamp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANTimestamp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANTimestamp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANTimestamp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TPCANTimestamp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+  Methods:
+    op_Implicit(TCLightTimestamp): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightTimestamp): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightTimestamp): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightTimestamp): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightTimestamp): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightTimestamp): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightTimestamp): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightTimestamp): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightTimestamp): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TCLightTimestamp): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Peak.Can.Light.PCANLight: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Init(HardwareType, Baudrates, FramesType): PrivateScope, Public, Static, HideBySig
+    Init(HardwareType, Baudrates, FramesType, UInt32, UInt16): PrivateScope, Public, Static, HideBySig
+    Close(HardwareType): PrivateScope, Public, Static, HideBySig
+    Status(HardwareType): PrivateScope, Public, Static, HideBySig
+    Write(HardwareType, TCLightMsg): PrivateScope, Public, Static, HideBySig
+    Read(HardwareType, TCLightMsg&): PrivateScope, Public, Static, HideBySig
+    ReadEx(HardwareType, TCLightMsg&, TCLightTimestamp&): PrivateScope, Public, Static, HideBySig
+    VersionInfo(HardwareType, String&): PrivateScope, Public, Static, HideBySig
+    DllVersionInfo(HardwareType, String&): PrivateScope, Public, Static, HideBySig
+    ResetClient(HardwareType): PrivateScope, Public, Static, HideBySig
+    MsgFilter(HardwareType, UInt32, UInt32, MsgTypes): PrivateScope, Public, Static, HideBySig
+    ResetFilter(HardwareType): PrivateScope, Public, Static, HideBySig
+    SetUSBDeviceNr(HardwareType, UInt32): PrivateScope, Public, Static, HideBySig
+    GetUSBDeviceNr(HardwareType, UInt32&): PrivateScope, Public, Static, HideBySig
+    SetRcvEvent(HardwareType, EventWaitHandle): PrivateScope, Public, Static, HideBySig
+Class ICDILight.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
