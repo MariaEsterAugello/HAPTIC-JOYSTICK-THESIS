@@ -1,0 +1,22 @@
+1.Run SensoStick.exe on Desktop.
+
+2.Check if sliders move accordingly with joystick. 
+  If not, restart joystick from scratch.
+
+3.Open Aerofly FS2. 
+  Set "location" to Speck Fehraltorf runaway 12 (side 30 is for landing). 
+  You must do this before each flight.
+
+WATCH OUT: Before take off, please check if aircraft commands are centred and 
+they move with joystick. If not, do not change Aerofly calibration settings, 
+it'll cause problems the next time you use it. 
+If it's not working properly now, there are two options: 
+	a. you haven't check at step 2;
+	b. restart Aerofly more often, cache causes problems. 
+
+If it gets dark, evening is about to come, you kept it open for many hours.
+Just go to conditions and change the time.
+
+4.Open SENSOSTICK_ESPERIMENTI7_09
+  run main7_09_22.m and follow instructions there.
+  Please don't use the pc while Aerofly and Simulink are running together.
