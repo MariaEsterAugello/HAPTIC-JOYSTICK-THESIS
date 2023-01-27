@@ -1,2 +1,4 @@
-c:\Libs
+c:\Libs thje only important thing to keep in mind
+i put this folder in c also
+
 
