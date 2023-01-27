@@ -1,0 +1,9 @@
+Power box on : "power" light will be green.
+Red emergency button up, press start: you'll see the "start" light green as well.
+
+Run Sensostick project, shortcut on desktop.
+
+Follow graphic interface steps, wait for point 4 to calibrate Sensostick before pressing the next buttons. 
+Encoder indeces must be around 65000, if not, restart from scratch.
+
+Check box "acknowledge button off" and "external control".
