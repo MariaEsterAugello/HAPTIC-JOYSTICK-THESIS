@@ -1,0 +1,25 @@
+
+
+in can.h
+
+#include "pcan_usb.h"
+oder
+#include "pcan_pci.h"
+
+
+
+in Senso_Stick.pro
+
+LIBS += -LC:/Libs/CAN/pcan-light/x64/VC_LIB
+LIBS += -lPCAN_USB
+oder
+LIBS += -LC:/Libs/CAN/PCAN-Basic API/x64/VC_LIB
+LIBS += -lPCAN_PCI
+
+
+In C:\Libs\CAN\pcan-light\x64\VC_LIB
+muss auch die entsprechende DLL liegen,
+also
+PCAN_USB.dll
+oder
+PCAN_PCI.dll
